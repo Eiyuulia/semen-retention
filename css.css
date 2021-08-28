@@ -141,22 +141,24 @@ footer .icon a img {
 
 /* hover */
 
-header .navb a:hover {
-    text-shadow: 1px 1px 10px #ccc;
-    text-decoration: underline;
-}
+@media (min-width: 721px) {
+    header .navb a:hover {
+        text-shadow: 1px 1px 10px #ccc;
+        text-decoration: underline;
+    }
 
-header .nava a:hover {
-    text-shadow: 1px 1px 10px #ccc, 5px 5px 30px #ccc;
-}
+    header .nava a:hover {
+        text-shadow: 1px 1px 10px #ccc, 5px 5px 30px #ccc;
+    }
 
-article:hover {
-    cursor: default;
-}
+    article:hover {
+        cursor: default;
+    }
 
-footer .icon:hover img {
-    position: relative;
-    top: -10px;
+    footer .icon:hover img {
+        position: relative;
+        top: -10px;
+    }
 }
 
 /* RESPONSIVE */
