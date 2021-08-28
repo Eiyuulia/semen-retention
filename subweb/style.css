@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    --containerwidth: 80%;
+    --greensr: #58979E;
+    --whitegreen: #f3feff;
+    --blackgreen: #19222c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--whitegreen);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--greensr);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header .navcontainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: var(--containerwidth);
+    height: 100%;
+    border: 1px dotted black;
+}
+
+header .nava {
+    margin-right: 20px;
+}
+
+header .navb {
+    position: absolute;
+    right: 0;
+    margin: 0 20px;
+}
+
+header .navb * {
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black;
+}
+
+article .artcontainer {
+    display: grid;
+    grid-template-areas:
+        "left right"
+    ;
+    grid-template-columns: 2fr 1fr;
+    width: var(--containerwidth);
+}
+
+article .text {
+    grid-area: left;
+    padding: 0 5% 0 0;
+    color: var(--blackgreen);
+}
+
+article .text p {
+    text-align: justify;
+}
+
+article .sidepic {
+    grid-area: right;
+    width: 100%;
+}
+
+article .soccontainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+article .socicon a {
+    margin-right: 20px;
+}
+
+article .socicon img {
+    width: 40px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 1px dotted black;
+    color: white;
+    background-color: var(--blackgreen);
+}
+
+footer .footcontainer {
+    display: flex;
+    justify-content: center;
+    width: var(--containerwidth);
+}
+
+footer p {
+    margin: 0 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
