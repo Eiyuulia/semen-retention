@@ -12,7 +12,7 @@ setInterval(function(){
 
     // ALGORITHM TO GET ELAPSED TIME BETWEEN TWO DATE
     let today = new Date();
-    let lastRelapse = new Date('August 29, 2021 22:00:00');
+    let lastRelapse = new Date('August 30, 2021 22:00:00');
 
 
     let days = 0;
